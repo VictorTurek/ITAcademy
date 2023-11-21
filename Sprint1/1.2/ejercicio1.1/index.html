@@ -56,7 +56,8 @@
                         </div>
                         <div class="buttons">
                             <div class="button">
-                                <button button type="button" class="btn btn-primary blue-button" id="getit-chrome">Get it on
+                                <button button type="button" class="btn btn-primary blue-button" id="getit-chrome">Get
+                                    it on
                                     Chrome</button>
                             </div>
                             <div class="button">
@@ -80,6 +81,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Features Section -->
+
         <section id="features">
             <div class="container">
                 <div class="features">
@@ -91,33 +95,39 @@
 
                 <div>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
+
                         <li class="nav-item nav-item-hero" role="presentation">
                             <div class="li-box-hero li-box-hero-first">
-                                <button class="nav-link nav-link-hero active" id="home-tab" data-bs-toggle="tab"
-                                    data-bs-target="#home-tab-pane" type="button" role="tab"
-                                    aria-controls="home-tab-pane" aria-selected="true">Simple Bookmarking</button>
+                                <button class="nav-link nav-link-hero active" id="bookmarking-tab" data-bs-toggle="tab"
+                                    data-bs-target="#bookmarking-tab-pane" type="button" role="tab"
+                                    aria-controls="bookmarking-tab-pane" aria-selected="true">Simple
+                                    Bookmarking</button>
                             </div>
                         </li>
 
-                        <li class="nav-item nav-item-hero role=" presentation">
-                            <div class="li-box-hero">
-                                <button class="nav-link nav-link-hero" id="profile-tab" data-bs-toggle="tab"
-                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                    aria-controls="profile-tab-pane" aria-selected="false">Speedy Searching</button>
-                            </div>
-                        </li>
                         <li class="nav-item nav-item-hero" role="presentation">
+                            <div class="li-box-hero">
+                                <button class="nav-link nav-link-hero" id="speedy-tab" data-bs-toggle="tab"
+                                    data-bs-target="#speedy-tab-pane" type="button" role="tab"
+                                    aria-controls="speedy-tab-pane" aria-selected="false">Speedy Searching</button>
+                            </div>
+                        </li>
 
+                        <li class="nav-item nav-item-hero" role="presentation">
                             <div class="li-box-hero">
                                 <button class="nav-link nav-link-hero" id="contact-tab" data-bs-toggle="tab"
                                     data-bs-target="#contact-tab-pane" type="button" role="tab"
                                     aria-controls="contact-tab-pane" aria-selected="false">Easy sharing</button>
                             </div>
                         </li>
+
                     </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
-                            aria-labelledby="home-tab" tabindex="0">
+
+                    <div class="tab-content" id="bookmarking-content">
+                        <div class="tab-pane fade show active" id="bookmarking-tab-pane" role="tabpanel"
+                            aria-labelledby="bookmarking-tab" tabindex="0">
+
+                            <!-- Contenido de la pestaña Simple Bookmarking -->
 
                             <div class="container" id="container-features-tab">
                                 <div class="row features-row">
@@ -128,49 +138,108 @@
                                             </div>
                                             <div class="illustration-features">
                                                 <img src="..\Recursos projecte sprint 1.2\Imagenes\illustration-features-tab-1.svg"
-                                                    alt="imagen_bookmark" loading="lazy"
-                                                    id="illustration-bookmarking" />
+                                                    alt="imagen_bookmark" loading="lazy" id="illustration-bookmarking"
+                                                    class="features-images" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col features-text">
-
-
                                         <h3>Bookmark in one click</h3>
                                         <div class="features-text-only">
-                                        <p>Organize your bookmarks however you like. Ours simple drag-and-drop interface
-                                            gives you
-                                            complete control over how you manage your favorite sites.</p>
+                                            <p>Organize your bookmarks however you like. Ours simple drag-and-drop
+                                                interface
+                                                gives you
+                                                complete control over how you manage your favorite sites.</p>
                                         </div>
-                                            <button button type="button" class="btn btn-primary blue-button features-button" id="more-info1">
-                                                More Info</button>
+                                        <button button type="button" class="btn btn-primary blue-button features-button"
+                                            id="more-info1">
+                                            More Info</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
-                                aria-labelledby="profile-tab" tabindex="0">...2</div>
-                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
-                                aria-labelledby="contact-tab" tabindex="0">...3</div>
                         </div>
+
+
+                        <div class="tab-pane fade" id="speedy-tab-pane" role="tabpanel" aria-labelledby="speedy-tab"
+                            tabindex="0">
+                            <!-- Contenido de la pestaña Speedy Searching -->
+
+                            <div class="container" id="container-features-tab">
+                                <div class="row features-row">
+                                    <div class="col column-left-shapes">
+                                        <div class="imagen-forma-izquierda">
+                                            <div class="shape2-container">
+                                                <div class="shape2"></div>
+                                            </div>
+                                            <div class="illustration-features">
+                                                <img src="..\Recursos projecte sprint 1.2\Imagenes\illustration-features-tab-2.svg"
+                                                    alt="imagen-intelligent-search" loading="lazy"
+                                                    id="illustration-intelligent-search" class="features-images" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col features-text">
+                                        <h3>Intelligent Search</h3>
+                                        <div class="features-text-only">
+                                            <p>Our powerful search feature will help you find saved sites i no time
+                                                at all. No need t trawl through all of your bookmarks.</p>
+                                        </div>
+                                        <button button type="button" class="btn btn-primary blue-button features-button"
+                                            id="more-info2">
+                                            More Info</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                            tabindex="0">
+                            <!-- Contenido de la pestaña Easy Sharing -->
+
+                            <div class="container" id="container-features-tab">
+                                <div class="row features-row">
+                                    <div class="col column-left-shapes">
+                                        <div class="imagen-forma-izquierda">
+                                            <div class="shape2-container">
+                                                <div class="shape2"></div>
+                                            </div>
+                                            <div class="illustration-features">
+                                                <img src="..\Recursos projecte sprint 1.2\Imagenes\illustration-features-tab-3.svg"
+                                                    alt="imagen-intelligent-search" loading="lazy"
+                                                    id="illustration-intelligent-search" class="features-images" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col features-text">
+                                        <h3>Share your bookmarks</h3>
+                                        <div class="features-text-only">
+                                            <p>Easily share your bookmarks and collections with others. Create a
+                                                shareable link that you can send at the click of a button.</p>
+                                        </div>
+                                        <button button type="button" class="btn btn-primary blue-button features-button"
+                                            id="more-info2">
+                                            More Info</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
 
                     </div>
 
                 </div>
         </section>
 
+        <!-- Download Section -->
+        <section class="download-section">
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos incidunt nesciunt aliquam suscipit
-            aperiam saepe mollitia illo dolorum doloremque omnis, fuga est, maxime nobis fugiat autem quidem accusamus.
-            Veniam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos incidunt nesciunt aliquam suscipit
-            aperiam saepe mollitia illo dolorum doloremque omnis, fuga est, maxime nobis fugiat autem quidem accusamus.
-            Veniam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos incidunt nesciunt aliquam suscipit
-            aperiam saepe mollitia illo dolorum doloremque omnis, fuga est, maxime nobis fugiat autem quidem accusamus.
-            Veniam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos incidunt nesciunt aliquam suscipit
-            aperiam saepe mollitia illo dolorum doloremque omnis, fuga est, maxime nobis fugiat autem quidem accusamus.
-            Veniam.</p>
+
+
+        </section>
+
+
 
     </div>
     <script src="../../../bootstrap/js/bootstrap.min.js"></script>
