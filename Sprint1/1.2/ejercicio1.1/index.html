@@ -12,7 +12,7 @@
 
 <body>
     <div class="margin">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="..\Recursos projecte sprint 1.2\Imagenes\logo-bookmark.svg" height="20"
@@ -27,13 +27,13 @@
                 <div class="collapse navbar-collapse " id="navbarToggler">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" id="features" href="#">FEATURES</a>
+                            <a class="nav-link" id="nav-features" href="#">FEATURES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="pricing" href="#">PRICING</a>
+                            <a class="nav-link" id="nav-pricing" href="#">PRICING</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact" href="#">CONTACT</a>
+                            <a class="nav-link" id="nav-contact" href="#">CONTACT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn btn-custom" id="login" href="#" role="button">LOGIN</a>
@@ -45,7 +45,7 @@
 
         <div class="container" id="container1">
             <div class="row">
-                <div class="col">
+                <div class="col" id="column1">
                     <div class="info1">
                         <div>
                             <h1>A Simple Bookmark Manager</h1>
@@ -56,39 +56,123 @@
                         </div>
                         <div class="buttons">
                             <div class="button">
-                                <button button type="button" class="btn btn-primary" id="getit-chrome">Get in on Chrome</button>
+                                <button button type="button" class="btn btn-primary blue-button" id="getit-chrome">Get it on
+                                    Chrome</button>
                             </div>
                             <div class="button">
-                                <button button type="button" class="btn btn-primary" id="getit-firefox">Get in on Firefox</button>
+                                <button button type="button" class="btn btn-primary" id="getit-firefox">Get it on
+                                    Firefox</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col" id="column2">
                     <div class="imagen-forma">
-                        <div class="shape1"></div>
-
+                        <div class="shape1-container">
+                            <div class="shape1 flex-fluid"></div>
+                        </div>
                         <div class="illustration-hero">
-                            <img src="..\Recursos projecte sprint 1.2\Imagenes\illustration-hero.svg" height="300px"
+                            <img src="..\Recursos projecte sprint 1.2\Imagenes\illustration-hero.svg"
                                 alt="Logo Bookmark" loading="lazy" id="illustration-hero" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <section id="features">
+            <div class="container">
+                <div class="features">
+                    <h2>Features</h2>
+                    <p>Our aims is to make it quick and easy for you to access your favourite websites. Your bookmarks
+                        sync
+                        between your devices so you can access them on the go.</p>
+                </div>
+
+                <div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item nav-item-hero" role="presentation">
+                            <div class="li-box-hero li-box-hero-first">
+                                <button class="nav-link nav-link-hero active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">Simple Bookmarking</button>
+                            </div>
+                        </li>
+
+                        <li class="nav-item nav-item-hero role=" presentation">
+                            <div class="li-box-hero">
+                                <button class="nav-link nav-link-hero" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">Speedy Searching</button>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-item-hero" role="presentation">
+
+                            <div class="li-box-hero">
+                                <button class="nav-link nav-link-hero" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">Easy sharing</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+
+                            <div class="container" id="container-features-tab">
+                                <div class="row features-row">
+                                    <div class="col column-left-shapes">
+                                        <div class="imagen-forma-izquierda">
+                                            <div class="shape2-container">
+                                                <div class="shape2"></div>
+                                            </div>
+                                            <div class="illustration-features">
+                                                <img src="..\Recursos projecte sprint 1.2\Imagenes\illustration-features-tab-1.svg"
+                                                    alt="imagen_bookmark" loading="lazy"
+                                                    id="illustration-bookmarking" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col features-text">
+
+
+                                        <h3>Bookmark in one click</h3>
+                                        <div class="features-text-only">
+                                        <p>Organize your bookmarks however you like. Ours simple drag-and-drop interface
+                                            gives you
+                                            complete control over how you manage your favorite sites.</p>
+                                        </div>
+                                            <button button type="button" class="btn btn-primary blue-button features-button" id="more-info1">
+                                                More Info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">...2</div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">...3</div>
+                        </div>
+
+                    </div>
+
+                </div>
+        </section>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos incidunt nesciunt aliquam suscipit
+            aperiam saepe mollitia illo dolorum doloremque omnis, fuga est, maxime nobis fugiat autem quidem accusamus.
+            Veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos incidunt nesciunt aliquam suscipit
+            aperiam saepe mollitia illo dolorum doloremque omnis, fuga est, maxime nobis fugiat autem quidem accusamus.
+            Veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos incidunt nesciunt aliquam suscipit
+            aperiam saepe mollitia illo dolorum doloremque omnis, fuga est, maxime nobis fugiat autem quidem accusamus.
+            Veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quos incidunt nesciunt aliquam suscipit
+            aperiam saepe mollitia illo dolorum doloremque omnis, fuga est, maxime nobis fugiat autem quidem accusamus.
+            Veniam.</p>
 
     </div>
-    </div>
-
-
-
-
-
-
-
-
     <script src="../../../bootstrap/js/bootstrap.min.js"></script>
 </body>
 

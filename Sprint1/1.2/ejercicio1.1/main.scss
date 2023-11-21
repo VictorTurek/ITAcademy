@@ -28,6 +28,7 @@ body {
 .navbar-collapse {
     display: flex;
     justify-content: center;
+    padding-left: 150px;
 }
 
 .icon-logo {
@@ -68,16 +69,56 @@ body {
 
 // Container1
 
-#container1 {}
+
+
 
 .row div {
     border: none;
+}
+
+
+@media (max-width: 991px) {
+    #container1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #column1 {
+        order: 2;
+    }
+
+    #column2 {
+        order: 1;
+    }
+
+    .info1 {
+        text-align: center;
+    }
+
 }
 
 // Bloque info1
 .info1 {
     display: grid;
 }
+
+h1 {
+    font-size: calc(1.2rem + 1.5vw);
+    font-weight: bold;
+    color: #2f2f5d;
+}
+
+p {
+    color: rgb(150, 150, 150);
+}
+
+
+
+
+
+
+
+
 
 
 //botones
@@ -99,7 +140,7 @@ body {
 
 }
 
-#getit-chrome {
+.blue-button {
     font-weight: bold;
     background-color: $main-color;
     color: white;
@@ -128,28 +169,26 @@ body {
 
 
 
-
-
-
-
-
-
-
 // Imagen y forma
 .imagen-forma {
     display: flex;
     justify-self: end;
 }
 
+.shape1-container {
+    position: relative;
+    margin-top: 90px;
+}
+
 .shape1 {
-    width: 400px;
+    width: 600px;
     height: 200px;
     background-color: $main-color;
     border-radius: 100px 0 0 100px;
     z-index: 1;
-    position: fixed;
-    right: 0;
-    margin-top: 90px;
+    position: absolute;
+    left: 200px;
+
 }
 
 .illustration-hero {
@@ -160,6 +199,165 @@ body {
 }
 
 #illustration-hero {
-    margin-right: 30px;
-    right: 0px;
+    margin-right: 18px;
+    max-height: 300px;
+}
+
+
+// Features
+
+#features {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.features {
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h2 {
+    font-size: calc(0.8rem + 1.5vw);
+    font-weight: bold;
+    color: #2f2f5d;
+}
+
+// Features tabs
+
+#myTab {
+    justify-content: center;
+    border-bottom: none;
+}
+
+.nav-item-hero {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.nav-item-hero .nav-link-hero {
+    color: rgb(199, 199, 199);
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.nav-item-hero .nav-link-hero:hover {
+    border: none;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    color: #fca5a5;
+}
+
+.nav-item-hero .nav-link-hero:focus {
+    border: none;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    color: #fca5a5;
+}
+
+
+.nav-item-hero .nav-link-hero.active {
+    color: rgb(112, 112, 112);
+    //border-color: white;
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+@media (max-width: 991px) {
+    .nav-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link-hero {
+        align-items: center;
+    }
+
+    .li-box-hero {
+        display: flex;
+        width: 350px;
+        border-bottom: 1px solid rgb(199, 199, 199);
+        justify-content: center;
+    }
+
+    .li-box-hero-first {
+        border-top: 1px solid rgb(199, 199, 199);
+    }
+
+    #column2 {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+//Contenido tabs de Features.
+
+#container-features-tab {
+    margin-top: 30px;
+
+}
+
+.column-left-shapes{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-forma-izquierda {
+    display: flex;
+    justify-self: center;
+}
+
+.shape2-container {
+    position: relative;
+    margin-top: 100px;
+}
+
+.shape2 {
+    width: 600px;
+    height: 200px;
+    background-color: $main-color;
+    border-radius: 0 100px 100px 0;
+    z-index: 1;
+    position: absolute;
+    left: -350px;
+
+}
+
+.illustration-features {
+    position: relative;
+    z-index: 2;
+    justify-items: end;
+    right: 0;
+}
+
+#illustration-bookmarking {
+    max-height: 250px;
+}
+
+.features-text{
+    display: grid;
+    align-content: center;
+    justify-items: flex-start;
+}
+
+@media (max-width: 991px) {
+    .features-row{
+        flex-direction: column;
+    }
+
+    .features-text{
+        margin-top: 70px;
+        justify-items: center;
+       
+    }
+    .features-text-only{
+    max-width: 500px;
+    text-align: center;
+    }
+
+    .features-button{
+        display: none;
+    }
 }
