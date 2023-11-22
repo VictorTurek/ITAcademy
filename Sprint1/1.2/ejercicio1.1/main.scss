@@ -299,7 +299,7 @@ h2 {
 
 }
 
-.column-left-shapes{
+.column-left-shapes {
     display: flex;
     justify-content: center;
 }
@@ -333,32 +333,116 @@ h2 {
 }
 
 
-.features-images{
+.features-images {
     max-height: 250px;
 }
 
-.features-text{
+.features-text {
     display: grid;
     align-content: center;
     justify-items: flex-start;
 }
 
 @media (max-width: 991px) {
-    .features-row{
+    .features-row {
         flex-direction: column;
     }
 
-    .features-text{
+    .features-text {
         margin-top: 70px;
         justify-items: center;
-       
-    }
-    .features-text-only{
-    max-width: 500px;
-    text-align: center;
+
     }
 
-    .features-button{
+    .features-text-only {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .features-button {
         display: none;
     }
+}
+
+// Download
+#download-section {
+    margin-top: 100px;
+}
+
+.download-text {
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.browser-columns {
+    display: flex;
+    justify-content: center;
+}
+
+// Cards
+.cards-container {
+    margin-top: 30px;
+}
+
+.download-column {
+    width: 210px;
+    border: 1p solid black;
+    margin: 10px;
+}
+
+.download-logos {
+    width: 60px;
+}
+
+.download-cards {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    padding: 15px 5px 15px 5px;
+}
+
+.card-title {
+    font-size: medium;
+}
+
+.card-text {
+    display: table;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted rgb(201, 201, 201);
+    font-size: small;
+}
+
+.download-button {
+    font-size: 12px;
+}
+
+.card-separation {
+    padding: 0px;
+}
+
+#firefox-card {
+    margin-top: 20px;
+}
+
+#opera-card {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .browser-columns {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #firefox-card {
+        margin-top: 0px;
+    }
+
+    #opera-card {
+        margin-top: 0px;
+    }
+
 }
