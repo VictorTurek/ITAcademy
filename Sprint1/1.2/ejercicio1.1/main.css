@@ -250,18 +250,17 @@ h2 {
 }
 
 .shape2-container {
-  position: relative;
   margin-top: 100px;
 }
 
 .shape2 {
-  width: 600px;
+  width: 35%;
   height: 200px;
   background-color: #5265E1;
   border-radius: 0 100px 100px 0;
   z-index: 1;
   position: absolute;
-  left: -350px;
+  left: 0;
 }
 
 .illustration-features {
@@ -295,6 +294,9 @@ h2 {
   }
   .features-button {
     display: none;
+  }
+  .shape2 {
+    width: 60%;
   }
 }
 #download-section {
