@@ -403,16 +403,17 @@
                 </div>
                 <div class="newsletter-signin">
 
-                    <form>
+                    <form class="g-3 needs-validation" novalidate>
                         <div class="submit-email">
-                            <div class="mb-3">
-
-                                <input type="email" placeholder="Enter your email address" class="form-control"
-                                    id="InputEmail" aria-describedby="emailHelp">
+                            <div class="email-input position-relative">
+                                <input type="email" class="form-control" id="emailId"
+                                    placeholder="Enter your email address" required>
+                                <div class="invalid-tooltip">Whoops, make sure it's an email</div>
                             </div>
-
-                            <button type="submit" class="btn btn-custom button-contact-us">Contact Us</button>
-                        </div>
+                            <div class="button-contact-us">
+                                <button type="submit" class="btn btn-custom" id="button-contact-us">Contact Us</button>
+                            </div>
+                       </div>
                     </form>
 
                 </div>
@@ -431,7 +432,7 @@
         <div class="footer-background">
 
         </div>
-        
+
     </section>
 
 
@@ -448,6 +449,29 @@
 
 
     <script src="../../../bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+
 </body>
 
 </html>
