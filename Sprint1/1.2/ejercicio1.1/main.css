@@ -234,6 +234,11 @@ h2 {
     width: 60%;
   }
 }
+@media (max-width: 400px) {
+  .li-box-hero {
+    width: 100%;
+  }
+}
 #container-features-tab {
   margin-top: 30px;
 }
@@ -245,7 +250,7 @@ h2 {
 
 .imagen-forma-izquierda {
   display: flex;
-  justify-self: center;
+  max-width: 100%;
 }
 
 .shape2-container {
@@ -296,6 +301,11 @@ h2 {
   }
   .shape2 {
     width: 60%;
+  }
+}
+@media (max-width: 400px) {
+  .features-images {
+    max-width: 100%;
   }
 }
 #download-section {
@@ -388,7 +398,7 @@ h2 {
 
 .faqs-accordion {
   margin-top: 50px;
-  width: 500px;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -427,6 +437,16 @@ h2 {
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFA0A0'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
+@media (max-width: 991px) {
+  .faqs-accordion {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .faqs-accordion {
+    width: 100%;
+  }
+}
 .newsletter-background {
   margin-top: 100px;
   background-color: #5265E1;
