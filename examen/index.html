@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+</head>
+
+<body>
+    <h1>Adivina un numero del 1 al 10</h1>
+
+    <!-- <input type="text" id="input" placeholder="introducir numero"> -->
+    <input type="button" value="Empezar!" onclick="generar()">
+
+    <p id="resultado"></p>
+
+    <script>
+
+
+
+
+        function generar() {
+            // let chosenNumber = parseInt(document.getElementById("input").value);
+            let randomNumber = Math.floor(Math.random() * 10) + 1;
+            let chosenNumber;
+            let resultado = "";
+
+            do {
+                chosenNumber = parseInt(prompt("adivina el numero del 1 al 10"));
+                if (chosenNumber > randomNumber) {
+                    resultado = alert("No! el numero es mas peque");
+                } else if (chosenNumber < randomNumber) {
+                    resultado = alert("No! el numero es mas grande");
+                } else {
+                    resultado = alert("Si! has acertado");
+                }
+                
+            } while (chosenNumber !== randomNumber);
+
+            document.getElementById("resultado").innerHTML = "Gracias por Jugar. Pulsa empezar para volver a empezar";
+
+            
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
